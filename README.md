@@ -5,4 +5,4 @@ Steps :
 
 Screenshots : 
 
-![alt text](https://github.com/priyanshdatyal/LineUp-Chat/main/images/.jpg?raw=true)
+![image](https://drive.google.com/uc?export=view&id=1v-Nsx8uVlqTNVJzD2RGAHKjpFNz_UV4)

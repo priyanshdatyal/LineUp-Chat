@@ -1,0 +1,369 @@
+
+.msgactions{
+    width: 100%;
+    height:7vw;
+    position: absolute;
+    margin:0vw;
+    bottom: 6.5vh;
+    left: 0;
+    display: inline-flex;
+}
+
+.messageBox{
+    width: 84.25%;
+    min-width: 84.25%;
+    max-width: 85%;
+    min-height: 3vw;
+    height:3vh;
+    max-height: auto;
+    margin: .25vw;
+    padding: 1.5vw;
+    padding-left: 2.5vw;
+    border-radius: 5vw !important;
+    position: relative;
+    outline: none;
+    border: none;
+    font-size: 3.75vw;
+    font-weight: 100;
+    resize: none;
+    color: var(--sub);
+    background: var(--mainbk);
+    /* background: transparent; */
+}
+
+    /* width */
+.messageBox::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.messageBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.messageBox::-webkit-scrollbar-thumb {
+    width: 7px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+
+.sendButton{
+    width: 10%;
+    margin-top: 2vw;
+    height: 80%;
+    position: relative;
+    color: var(--sub);
+    text-decoration: none;
+    font-size: 3vw;
+    padding: .5vw;
+    margin-left: 1vw;
+    cursor: pointer;
+    text-align: center;
+    background:var(--skin-color);
+    border-radius: 2.5vw !important;
+    border:none !important;
+    bottom: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.msgactions textarea:focus{
+    border: none !important;
+    outline: 1px solid rgba(var(--subabs),.5);
+}
+
+
+.chatMsg{
+    width: 96%;
+    height: 77.5%;
+    position: absolute;
+    top:11%;
+    left:1%;
+    padding: .25vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    behavior: smooth;
+    scroll-behavior: smooth;
+}
+
+.chatMsg::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+.chatMsg::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+.chatMsg::-webkit-scrollbar-thumb {
+    width: 7px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.msgCon{
+    width: 100%;
+    min-height: 7vw;
+    height: fit-content !important;
+    position: relative;
+    margin: 1.25vw;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+}
+.rcvMsg{
+    width: fit-content;
+    max-width: 40%;
+    height: fit-content;
+    min-height: 2.5vw;
+    padding: .5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    position: relative;
+    color: white;
+    left: 5%;
+    margin: .125vw;
+    background: rgb(117, 117, 117);
+    overflow: show;
+    white-space: initial;
+    border-radius: 2.5vw !important;
+}
+.sentMsg{
+    width: fit-content;
+    max-width: 40%;
+    height: fit-content;
+    min-height: .5vw;
+    padding: .5vw;
+    padding-left: 2vw;
+    padding-right: 4vw;
+    position: relative;
+    color: white;
+    float: right;
+    right: 3%;
+    background: var(--skin-color);
+    white-space: initial;
+    border-radius: 2.5vw !important;
+    /* overflow: hidden; */
+}
+.sentMsg p{
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+    margin: 1vw;
+    font-size: 3.25vw;
+    word-wrap: break-word;
+    white-space: initial;
+    
+}
+.rcvMsg p{
+    width: 90%;
+    max-width: 90%;
+    height: fit-content;
+    margin: 1vw;
+    font-size: 3.25vw;    
+    word-wrap: break-word;
+    white-space: initial;
+    
+}
+.rcvMsg .usrimg{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    border-radius: 50% !important;
+    left:-3vw;
+    bottom: 0vw;
+    /* background: red; */
+}
+
+.sentMsg .usrimg{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    border-radius: 50% !important;
+    right:-2.125vw;
+    bottom: .0vw;
+}
+#phonelgout img{
+    width: 9vw;
+    height: 9vw;
+    margin: 0vw;
+    object-fit: contain;
+    position: absolute;
+    top:-750%;
+    right: -550%;
+}
+@media screen and (min-width:1366px) {
+    .msgactions{
+        width: 100%;
+        height:2vw;
+        position: absolute;
+        margin:0vw;
+        bottom: .25vw;
+        left: 0;
+        display: inline-flex;
+    }
+
+    .messageBox{
+        width: 85%;
+        min-width: 85%;
+        max-width: 85%;
+        min-height: 1vw;
+        height:1vh;
+        max-height: 1vw;
+        margin: .25vw;
+        padding: .25vw;
+        border-radius: .25vw !important;
+        position: relative;
+        font-size: 1.5vh;
+        font-weight: 100;
+        resize: none;
+        color: var(--sub);
+        background: transparent;
+        box-shadow: 0px 0px 5px -2px black;
+    }
+
+
+        /* width */
+    .messageBox::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    /* Track */
+    .messageBox::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    /* Handle */
+    .messageBox::-webkit-scrollbar-thumb {
+        width: 7px;
+        background: #105aaf;
+        border-radius: 5px;
+    }
+    
+    
+    .sendButton{
+        width: 10%;
+        margin-top: .3vw;
+        height: 1.5vw;
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: .75vw;
+        margin-left: 0vw;
+        padding: .125vw;
+        cursor: pointer;
+        text-align: center;
+        background: linear-gradient(to bottom, #318ae2, #105aaf);
+        border-radius: .25vw !important;
+        border:none !important;
+        bottom: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .msgactions textarea:focus{
+        border: none !important;
+        outline: 1px solid rgba(var(--subabs),.5);
+    }
+
+
+    .chatMsg{
+        width: 96%;
+        height: 77.5%;
+        position: absolute;
+        top:11%;
+        left:1%;
+        padding: .25vw;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        behavior: smooth;
+        scroll-behavior: smooth;
+    }
+    
+    .chatMsg::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    /* Track */
+    .chatMsg::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    /* Handle */
+    .chatMsg::-webkit-scrollbar-thumb {
+        width: 7px;
+        background: transparent;
+        border-radius: 5px;
+    }
+    
+    .msgCon{
+        width: 100%;
+        min-height: 2vw;
+        height: fit-content !important;
+        position: relative;
+        min-height: 1vw;
+        margin: .25vw;
+        overflow: hidden;
+        display: block;
+        padding: 0;
+    }
+    .rcvMsg{
+        border-radius:.45vw !important;
+        width: fit-content;
+        max-width: 40%;
+        height: fit-content;
+        min-height: .5vw;
+        padding: .0125vw;
+        padding-left: .5vw;
+        padding-right: .25vw;
+        position: relative;
+        color: black;
+        left: 3%;
+        margin: .125vw;
+        background: #60e6aa;
+    }
+    .sentMsg{
+        border-radius:.45vw !important;
+        width: fit-content;
+        max-width: 40%;
+        height: fit-content;
+        min-height: .5vw;
+        padding: .00125vw;
+        padding-left: .5vw;
+        padding-right: .25vw;
+        position: relative;
+        color: white;
+        float: right;
+        right: 3%;
+        background: black;
+    }
+    .sentMsg p{
+        margin: .25vw;
+        font-size: .75vw;
+    }
+    .rcvMsg p{
+        margin: .25vw;
+        font-size: .75vw;
+    }
+    .rcvMsg .usrimg{
+        width: 1vw;
+        height: 1vw;
+        position: absolute;
+        border-radius: 50%;
+        left:-.75vw;
+        bottom: 0vw;
+    }
+    
+    .sentMsg .usrimg{
+        width: 1vw;
+        height: 1vw;
+        position: absolute;
+        border-radius: 50%;
+        right:-.75vw;
+        bottom: .0vw;
+    }
+    #phonelgout{
+        display: none;
+    }
+}

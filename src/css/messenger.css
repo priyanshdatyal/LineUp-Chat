@@ -1,0 +1,356 @@
+
+.messagesApp {
+    width: 100vw;
+    height: 101vh;
+    position: absolute;
+    left: 0;
+    bottom:-1vh;
+    z-index: 1006;
+    background: var(--mainbk);
+    background-position: center;
+    background-size: cover;
+    border-radius: .75vw;
+    cursor: grab;
+    filter: saturate(2.5) contrast(1.25);
+    padding: 0;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 27px -5px black;
+    transform: translateY(0%) scale(1);
+    transition: transform 0.5s ease-in-out;
+    filter: none !important;
+    border-radius: 0vw !important;
+    animation : loadMsg .25s ease-in-out
+}
+@keyframes loadMsg{
+    0%{
+        opacity:0;
+        transform: scale(0.125);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+.chat-list {
+    display: none;
+}
+.chat-head {
+    width: 100%;
+    height: 25vw;
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    left: 0%;
+    transform-origin: top;
+    overflow: hidden;
+    padding: .5vh;
+    padding-left: 1vw;
+    cursor: pointer;
+    text-align: left;
+    color: var(--sub);
+}
+.my-chat {
+    width: 90%;
+    height: 10.0%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: .5vw;
+    background: linear-gradient(to bottom, #1e548a, #5086c3);
+    font-weight: 700;
+}
+.chat-name {
+    width: 72.75%;
+    height: 20%;
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 25%;
+    text-align: left;
+    color: white;
+    font-weight: 600;
+}
+.chat-profile {
+    width: 20%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 10%
+}
+.chat-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 50%;
+    filter: saturate(1) !important;
+}
+.chat-window {
+    width: 100%;
+    height: 96%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 4%;
+    right: 0%;
+    transform-origin: top;
+    object-fit: cover;
+    background: rgba(var(--mainabs),.6);
+    overflow: hidden;
+    border-radius: 0vw !important;
+}
+.chat-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: .5vw;
+    background: rgba(var(--subabs),.1);
+}
+.chat-win-header {
+    width: 100%;
+    height: 5%;
+    margin-left:.5vw;
+    padding: 2.25vw;
+    display: inline-flex;
+    border-bottom: 1px solid var(--faded-main);
+}
+.win-profile {
+    height: 9vw;
+    width: 9vw;
+    display: block;
+    overflow: hidden;
+    border-radius: 50% !important;
+    filter: saturate(1) !important;
+}
+.win-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    margin: auto;
+    border-radius: 50%;
+}
+.win-name {
+    display: block;
+    width: 85%;
+    top:2.75%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    color: var(--sub);
+}
+
+.signoutmsg-btn{
+    width: 12%;
+    height:1.5vw;
+    color: red;
+    position: absolute;
+    left:18%;
+    top:7.5%;
+    margin: .25vw;
+    padding: 0;
+    display: inline-flex;
+    border-radius: .25vw !important;
+}
+
+.signoutmsg-btn p{width: 100%;
+    margin-top: .125vw;
+    left:18%;
+    text-align: left;
+    display: none;
+}
+.signoutmsg-btn img{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: .05vw;
+    object-fit: contain;
+}
+@media screen and (min-width:1366px) {
+    .messagesApp {
+        width: 41.25vw;
+        height: 26.6vw;
+        position: absolute;
+        left: 30%;
+        bottom: 20vh;
+        z-index: 1000;
+        background: var(--baseui-img) no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: .75vw;
+        cursor: grab;
+        filter: saturate(2.5) contrast(1.25);
+        padding: 0;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        box-shadow: 0px 0px 12px -5px black;
+        transform: translateY(0%) scale(1);
+        transition: transform 0.5s ease-in-out;
+        filter: none !important;
+        border-radius: .5vw !important;
+        animation : loadMsg .25s ease-in-out
+    }
+    @keyframes loadMsg{
+        0%{
+            opacity:0;
+            left: 35%;
+            bottom: -15vh;
+            transform: scale(0.125);
+        }
+        100%{
+            opacity:1;
+            left: 30%;
+            bottom: 20vh;
+            transform: scale(1);
+        }
+    }
+    .chat-list {
+        width: 27.5%;
+        height: 25vw;
+        margin: 0;
+        position: absolute;
+        top: 1.6vw;
+        left: 0%;
+        transform-origin: top;
+        object-fit: cover;
+        background: rgba(var(--mainabs), var(--o7));
+        overflow: hidden;
+        border-bottom-left-radius: .75vw;
+        padding: 1.5vh;
+        cursor: pointer;
+        border-radius: 0vw !important;
+        display: block;
+    }
+    .chat-head {
+        width: 100%;
+        height: 25vw;
+        margin: 0;
+        position: absolute;
+        top: 2%;
+        left: 0%;
+        transform-origin: top;
+        overflow: hidden;
+        padding: .5vh;
+        padding-left: 1vw;
+        cursor: pointer;
+        text-align: left;
+        color: var(--sub);
+    }
+    .my-chat {
+        width: 90%;
+        height: 10.0%;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        border-radius: .5vw;
+        background: linear-gradient(to bottom, #1e548a, #5086c3);
+        font-weight: 700;
+    }
+    .chat-name {
+        width: 72.75%;
+        height: 20%;
+        display: block;
+        position: absolute;
+        right: 0%;
+        top: 25%;
+        text-align: left;
+        color: white;
+        font-weight: 600;
+    }
+    .chat-profile {
+        width: 20%;
+        height: 80%;
+        display: block;
+        position: absolute;
+        left: 2%;
+        top: 10%
+    }
+    .chat-profile img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 50%;
+        filter: saturate(1) !important;
+    }
+    .chat-window {
+        width: 99.75%;
+        height: 24.75vw;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 1.6vw;
+        right: 0%;
+        transform-origin: top;
+        object-fit: cover;
+        background: rgba(var(--mainabs), var(--o7));
+        overflow: hidden;
+        border-radius: 0vw !important;
+    }
+    .chat-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: .5vw;
+        background: rgba(var(--mainabs), var(--o1));
+    }
+    .chat-win-header {
+        width: 100%;
+        height: 4vh ;
+        margin-left:-.5vw;
+        padding: .125vw;
+        display: inline-flex;
+        border-bottom: 1px solid var(--faded-main);
+    }
+    .win-profile {
+        height: 1.5vw;
+        width: 1.5vw;
+        display: block;
+        overflow: hidden;
+        border-radius: 50% !important;
+        filter: saturate(1) !important;
+    }
+    .win-profile img {
+        width: 1.5vw;
+        height: 1.5vw;
+        object-fit: cover;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .win-name {
+        display: block;
+        width: 92.5%;
+        top:3.75%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        color: var(--sub);
+    }
+    
+    .signoutmsg-btn{
+        width: 12%;
+        height:1.5vw;
+        color: red;
+        position: absolute;
+        left:85%;
+        top:.125%;
+        margin: .25vw;
+        padding: 0;
+        display: inline-flex;
+        border-radius: .25vw !important;
+    }
+
+    .signoutmsg-btn p{width: 100%;
+        margin-top: .125vw;
+        text-align: left;
+        display: block;
+    }
+    .signoutmsg-btn img{
+        width: 1.5vw;
+        height: 1.5vw;
+        margin: .05vw;
+        object-fit: contain;
+    }
+}
